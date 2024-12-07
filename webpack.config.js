@@ -49,6 +49,7 @@ var config = {
 }
 
 var frontendConfig = Object.assign({}, config, {
+	mode: 'development',
     entry: {
         app: path.resolve(__dirname, './frontend/web/js/app.js'),
         style: path.resolve(__dirname, './frontend/web/css/style.less'),
@@ -60,6 +61,7 @@ var frontendConfig = Object.assign({}, config, {
 });
 
 var backendConfig = Object.assign({}, config, {
+	mode: 'development',
     entry: {
         app: path.resolve(__dirname, './backend/web/js/app.js'),
         style: path.resolve(__dirname, './backend/web/css/style.less'),
@@ -70,6 +72,6 @@ var backendConfig = Object.assign({}, config, {
     },
 });
 
-module.exports = [
+module.exports = [	
     frontendConfig, backendConfig
 ];
