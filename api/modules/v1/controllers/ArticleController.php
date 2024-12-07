@@ -34,7 +34,7 @@ use yii\web\HttpException;
 class ArticleController extends ActiveController
 {
     /**
-     * @var string
+     * @var string 
      */
     public $modelClass = 'api\modules\v1\resources\Article';
 
